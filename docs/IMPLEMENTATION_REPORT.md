@@ -32,7 +32,7 @@ Executed locally against the implementation:
 
 The initial browser download mirror returned invalid ZIPs; pinning Playwright 1.56.1 and its fallback mirror installed Chromium successfully. The first PDF text check exposed ligatures split into separate extraction items; comparison now normalises whitespace and Unicode while retaining complete character order. The final export checks pass without skipping text assertions.
 
-GitHub CI status will be linked from the PR. No production deployment is claimed.
+GitHub Actions PR run [41858294448](https://github.com/jotakv/KevinJoelValdiviesoOrdonez/actions/runs/41858294448) also passed all install, validation, build, PDF, unit, browser and discovery steps and uploaded its artifacts. A follow-up removes hardcoded identity text from the portfolio/layout, so name/headline edits propagate from the Master everywhere; local validation, build, PDF export and browser checks passed again. See PR #1 checks for the latest commit status. No production deployment is claimed.
 
 ## Required intervention / limitations
 
