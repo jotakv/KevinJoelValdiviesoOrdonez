@@ -1,0 +1,11 @@
+---
+import '../styles/site.css';
+import {load} from '../lib/load';
+const {master}=load();
+import '../styles/print.css';
+import { url } from '../../site.config.mjs';
+interface Props {title:string;description:string;language?:'en'|'es'}
+const {title,description,language='en'}=Astro.props;
+---
+<!doctype html><html lang={language}><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="description" content={description}/><title>{title} | {master.identity.name}</title><link rel="canonical" href={new URL(Astro.url.pathname,Astro.site)}/></head>
+<body><a class="skip screen-only" href="#main">{language==='es'?'Ir al contenido':'Skip to content'}</a><header class="site-header screen-only"><a class="wordmark" href={url()}>KV<span> / </span></a><nav aria-label={language==='es'?'Navegación':'Navigation'}><a href={url('#profiles')}>{language==='es'?'Currículums':'Explore CVs'}</a><a href={url('#expertise')}>{language==='es'?'Competencias':'Expertise'}</a></nav></header><slot/><footer class="site-footer screen-only">{master.identity.name} · {master.identity.headline.en}</footer></body></html>

@@ -1,0 +1,24 @@
+---
+import type {CV} from '../lib/compose-cv';
+import {url} from '../../site.config.mjs';
+interface Props {cv:CV}
+const {cv}=Astro.props;
+const labels=cv.language==='es'?{summary:'Perfil profesional',experience:'Experiencia',technicalSkills:'Competencias técnicas',functionalSkills:'Competencias funcionales',projects:'Proyectos',certifications:'Certificaciones y formación',education:'Educación',languages:'Idiomas'}:{summary:'Professional summary',experience:'Experience',technicalSkills:'Technical skills',functionalSkills:'Functional skills',projects:'Projects',certifications:'Certifications & training',education:'Education',languages:'Languages'};
+const date=(s:string)=>new Intl.DateTimeFormat(cv.language,{year:'numeric',month:'short',timeZone:'UTC'}).format(new Date(`${s}-01T00:00:00Z`));
+---
+<article class="cv-document" data-cv={cv.slug}>
+<header class="cv-header">
+{cv.photo&&<img class="cv-photo" src={url(cv.photo)} alt={cv.name} width="112" height="112"/>}
+<h1>{cv.name}</h1><p class="cv-title">{cv.title}</p>
+<div class="contacts">
+{cv.contact.email&&<a href={`mailto:${cv.contact.email}`}>{cv.contact.email}</a>}
+{cv.contact.phone&&<a href={`tel:${cv.contact.phone.replace(/\s/g,'')}`}>{cv.contact.phone}</a>}
+{cv.contact.address&&<span>{cv.contact.address}</span>}
+{cv.contact.linkedin&&<a href={cv.contact.linkedin}>LinkedIn</a>}
+{cv.contact.github&&<a href={cv.contact.github}>GitHub</a>}
+</div></header>
+{cv.sectionOrder.map(key=>(key==='summary'?Boolean(cv.summary):cv[key].length>0) ? <section data-section={key}><h2>{labels[key]}</h2>
+{key==='summary'?<div set:html={cv.summary}/>:key==='experience'?cv.experience.map(job=><div class="job" data-job={job.id}><h3>{job.role} <span>— {job.employer}</span></h3><p class="dates">{date(job.from)} – {job.to?date(job.to):(cv.language==='es'?'Actualidad':'Present')}</p><ul>{job.bullets.map(b=><li data-id={b.id}>{b.text}</li>)}</ul></div>):key==='technicalSkills'||key==='functionalSkills'?<ul class="skills">{cv[key].map(s=><li data-id={s.id}>{s.text}</li>)}</ul>:<ul>{cv[key].map(s=><li data-id={s.id}>{s.text}</li>)}</ul>}
+</section>:null)}
+<p class="revision">v{cv.version} · {cv.language==='es'?'Actualizado':'Updated'} {cv.updatedAt}</p>
+</article>
