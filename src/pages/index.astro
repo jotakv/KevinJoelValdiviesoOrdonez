@@ -1,0 +1,12 @@
+---
+import Layout from '../components/Layout.astro';
+import {load} from '../lib/load';
+import {url} from '../../site.config.mjs';
+const {master,cvs}=load();
+---
+<Layout title="Dynamics 365 CE & Power Platform Consultant" description={master.identity.summary.en}>
+<main id="main" class="portfolio">
+<section class="hero"><div class="hero-copy"><p class="eyebrow">MICROSOFT BUSINESS APPLICATIONS</p><h1>Kevin Joel<br/>Valdivieso Ordóñez<span class="accent">.</span></h1><p class="hero-title">{master.identity.headline.en}</p><p class="intro">{master.identity.summary.en}</p><div class="actions"><a class="button" href="#profiles">Explore my CVs <span aria-hidden="true">↗</span></a><a href={master.contacts.linkedin}>LinkedIn ↗</a><a href={master.contacts.github}>GitHub ↗</a></div></div><div class="portrait"><img src={url(master.identity.photo)} alt={master.identity.name} width="614" height="406"/><p>Technology expertise.<br/><strong>Business applications that work.</strong></p></div></section>
+<section id="expertise" class="expertise"><p class="eyebrow">CORE EXPERTISE</p><ul>{master.skills.slice(0,8).map(s=><li>{s.text.en}</li>)}</ul></section>
+<section id="profiles" class="profiles"><div class="section-heading"><div><p class="eyebrow">SPECIALISED PROFILES</p><h2>The experience.<br/>The focus you need.</h2></div><p>Explore a profile for your role.<br/>Read online or download a print-ready CV.</p></div><div class="cv-grid">{cvs.map((cv,i)=><article class="cv-card" data-profile={cv.slug}><span class="card-number">{String(i+1).padStart(2,'0')} / CV</span><h3><a href={url(`cv/${cv.slug}/`)}>{cv.title}</a></h3><p>{cv.description}</p><div class="card-actions"><a href={url(`cv/${cv.slug}/`)}>View CV ↗</a><a href={url(`pdfs/${cv.pdfName}`)} download>Download PDF ↓</a></div></article>)}</div></section>
+</main></Layout>

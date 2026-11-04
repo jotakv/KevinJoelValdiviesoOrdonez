@@ -1,0 +1,12 @@
+---
+import Layout from '../../components/Layout.astro';
+import CVDocument from '../../components/CVDocument.astro';
+import {load} from '../../lib/load';
+import {url} from '../../../site.config.mjs';
+export function getStaticPaths(){return load().cvs.map(cv=>({params:{slug:cv.slug},props:{cv}}));}
+const {cv}=Astro.props;
+---
+<Layout title={cv.title} description={cv.description} language={cv.language}>
+<main id="main" class="cv-page"><div class="cv-toolbar screen-only"><a href={url('#profiles')}>← {cv.language==='es'?'Todos los perfiles':'All profiles'}</a><div class="actions"><button id="print-cv" type="button">{cv.language==='es'?'Imprimir / Guardar PDF':'Print / Save as PDF'}</button><a class="button" href={url(`pdfs/${cv.pdfName}`)} download>{cv.language==='es'?'Descargar PDF':'Download PDF'} ↓</a></div></div><CVDocument cv={cv}/></main>
+<script>document.querySelector('#print-cv')?.addEventListener('click',()=>window.print());</script>
+</Layout>
