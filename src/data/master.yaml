@@ -458,7 +458,7 @@ skills:
     text: 
       en: "User training and enablement"
     kind: "functional"
-projects: {}
+projects: []
 education: 
   -
     id: "dorset"
