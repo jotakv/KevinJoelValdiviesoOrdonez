@@ -3,7 +3,7 @@
 **Date:** 2026-11-05  
 **Branch:** `feature/update-cv-content-from-templates`  
 **Base:** `master`  
-**Pull request:** pending creation; link will be added after the PR exists.
+**Pull request:** https://github.com/jotakv/KevinJoelValdiviesoOrdonez/pull/2 (draft; review required).
 
 ## Scope and method
 
