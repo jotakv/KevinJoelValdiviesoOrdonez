@@ -85,8 +85,11 @@ Removed OCR fragments (e.g. `P—CSC—‘CisSYT`) and broken markup from the no
 - **Code edit review:** Existing schema, composition logic, site pages, test scripts and GitHub Actions workflow inspected.
 - **Automated regression tests:** Existing `tests/composition.test.ts` retained.
 - **New automated tests:** `tests/content-updates.test.ts` checks consolidation, educational records, profile differentiation, preserved privacy selectors and exclusion of unverified numeric claims.
-- **Local execution:** Not run through the GitHub connector; GitHub Actions results should be consulted after opening the PR.
-- **PDF validation:** Existing CI flow covers build, PDF export, site acceptance and dynamic discovery. The results for this branch require a successful CI run.
+- **Local execution:** No local environment available; all commands were executed by GitHub Actions.
+- **CI run:** [Successful GitHub Actions execution #42018154409](https://github.com/jotakv/KevinJoelValdiviesoOrdonez/actions/runs/42018154409) on commit `2cff9cadea6a3e23ab16d900193d3b4467b98fc3` (2026-11-05). All six validation/build/test gates succeeded: `validate`, `build`, `export:pdf`, `npm test`, `test:site`, `test:discovery`.
+- **PDF validation:** Five generated PDFs, each two A4 pages with selectable text and three functional links. Character counts: technical lead 3,131; functional consultant 3,206; technical consultant 3,232; Power Platform 3,131; Dynamics 365 CE 3,123.
+- **Automated dynamic discovery:** Test confirmed that adding an enabled Markdown profile generates a new landing and PDF while unpublished drafts stay hidden. Two legacy test fixtures required compatibility updates to account for the new curated bullet selectors and YAML formatting.
+- **Publication status:** PR remains a draft; `master` and the deployed site were not updated.
 
 ## Files modified
 
@@ -97,6 +100,8 @@ Removed OCR fragments (e.g. `P—CSC—‘CisSYT`) and broken markup from the no
 - `src/content/cvs/power-platform-consultant.md`
 - `src/content/cvs/dynamics-365-ce-specialist.md`
 - `tests/content-updates.test.ts`
+- `tests/composition.test.ts` (isolate the unknown-reference test from curated job bullets)
+- `scripts/test-discovery.ts` (allow equivalent YAML whitespace in acceptance fixture)
 - `docs/CV_CONTENT_UPDATE_REPORT.md`
 
 **Review requirement:** This is a content update prepared for Pull Request review, not authorisation to merge into `master` or deploy the changed public website.
