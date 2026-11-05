@@ -72,6 +72,7 @@ skills:
     - "rest-soap"
     - "dataverse-web-api"
     - "azure-functions"
+    - "azure"
     - "requirements"
     - "solution-design"
     - "production-support"
