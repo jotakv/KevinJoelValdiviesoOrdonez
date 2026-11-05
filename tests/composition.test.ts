@@ -25,7 +25,7 @@ test('single Master change propagates to all dependent profiles',()=>{
  for(const p of profiles)assert.ok(JSON.stringify(composeCV(master,p)).includes('SHARED UPDATE'));
 });
 test('invalid config and references fail with readable errors',()=>{
- const {master,profiles}=fixture();const p=profiles[0];p.experience.include=['unknown'];assert.throws(()=>composeCV(master,p),/unknown experience reference/);
+ const {master,profiles}=fixture();const p=profiles[0];p.experience.include=['unknown'];p.experience.bullets={};assert.throws(()=>composeCV(master,p),/unknown experience reference/);
  assert.throws(()=>profileSchema.parse({...p,print:{format:'Letter'}}));
  assert.throws(()=>masterSchema.parse({...master,skills:[...master.skills,master.skills[0]]}),/globally unique/);
  const q=fixture().profiles[0];q.contact.phone='missing';assert.throws(()=>composeCV(master,q),/unknown phones selector/);
