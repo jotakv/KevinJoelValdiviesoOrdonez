@@ -1,167 +1,500 @@
-updatedAt: '2026-11-04'
-identity:
-  name: Kevin Joel Valdivieso Ordóñez
-  headline:
-    en: Dynamics 365 CE & Power Platform Consultant
-  photo: images/profile.jpg
-  summary:
-    en: Software design and development focused on Dynamics 365 CE, Power Platform
-      and .NET. Experience with Dynamics 365 Sales, Customer Insights, Power Apps,
-      JavaScript and Microsoft Azure.
-contacts:
-  phones:
-    primary: +34 695 416 518
-  emails:
-    professional: kevinjoel1995@gmail.com
+updatedAt: "2026-11-05"
+identity: 
+  name: "Kevin Joel Valdivieso Ordóñez"
+  headline: 
+    en: "Senior Dynamics 365 CE & Power Platform Consultant"
+  photo: "images/profile.jpg"
+  summary: 
+    en: "Senior Microsoft Dynamics 365 CE and Power Platform consultant with 7+ years of experience in CRM delivery, solution design, platform extensibility and Azure integrations. Combines hands-on C#/.NET and Dataverse expertise with requirements analysis, stakeholder workshops, Agile delivery and technical mentoring. Available for independent B2B consulting engagements."
+contacts: 
+  phones: 
+    primary: "+34 695 416 518"
+  emails: 
+    professional: "kevinjoel1995@gmail.com"
   addresses: {}
-  linkedin: https://www.linkedin.com/in/crmdynamics365powerapps
-  github: https://github.com/jotakv
-experience:
-- id: bravent
-  employer: Bravent
-  role:
-    en: Dynamics 365 Senior Consultant
-  from: 2023-09
-  to: null
-  bullets:
-  - id: bravent-1
-    text:
-      en: Dynamics 365 Sales, Dynamics 365 Customer Insight, Power Platform
-  - id: bravent-2
-    text:
-      en: Power Automate, Dataverse, Power Apps
-  - id: bravent-3
-    text:
-      en: Model-driven Apps, form scripting using TypeScript/JavaScript
-- id: alten
-  employer: ALTEN
-  role:
-    en: Dynamics 365 .Net Developer CRM
-  from: 2020-01
-  to: 2023-08
-  bullets:
-  - id: alten-1
-    text:
-      en: Migration from Ms CRM 2013 to Dynamics 365, plugins, custom workflows
-  - id: alten-2
-    text:
-      en: Sitemap and ribbon XML customization, XRM Toolkit, REST/SOAP services
-  - id: alten-3
-    text:
-      en: HTML, CSS, JavaScript, JQuery, ASP.NET, Git, Azure DevOps
-- id: everis
-  employer: everis
-  role:
-    en: .Net Developer Dynamics 365 MS CRM
-  from: 2019-01
-  to: 2020-01
-  bullets:
-  - id: everis-1
-    text:
-      en: Plugins in Dynamics 365, Angular/JavaScript web components
-  - id: everis-2
-    text:
-      en: Azure web jobs/functions, Bootstrap
-  - id: everis-3
-    text:
-      en: Used Git, TFS, Jira, Trello, Service Now
-- id: ciemat
-  employer: CIEMAT
-  role:
-    en: Web Developer
-  from: 2015-07
-  to: 2016-07
-  bullets:
-  - id: ciemat-1
-    text:
-      en: Front end with Liferay CMS, Velocity framework
-  - id: ciemat-2
-    text:
-      en: Moodle web administration
-  - id: ciemat-3
-    text:
-      en: HTML5, CSS3, JavaScript, Bootstrap, jQuery
-skills:
-- id: d365
-  text:
-    en: Dynamics 365 CE
-  kind: technical
-- id: sales
-  text:
-    en: Dynamics 365 Sales
-  kind: technical
-- id: customer-insights
-  text:
-    en: Dynamics 365 Customer Insights
-  kind: technical
-- id: power-platform
-  text:
-    en: Power Platform
-  kind: technical
-- id: power-apps
-  text:
-    en: Power Apps
-  kind: technical
-- id: power-automate
-  text:
-    en: Power Automate
-  kind: technical
-- id: dataverse
-  text:
-    en: Dataverse
-  kind: technical
-- id: azure
-  text:
-    en: Microsoft Azure
-  kind: technical
-- id: azure-functions
-  text:
-    en: Azure Functions
-  kind: technical
-- id: dotnet
-  text:
-    en: .NET
-  kind: technical
-- id: typescript
-  text:
-    en: TypeScript
-  kind: technical
-- id: javascript
-  text:
-    en: JavaScript
-  kind: technical
-- id: azure-devops
-  text:
-    en: Azure DevOps
-  kind: technical
-- id: sql
-  text:
-    en: Microsoft SQL Server
-  kind: technical
-- id: rest-soap
-  text:
-    en: REST / SOAP integrations
-  kind: technical
-- id: agile
-  text:
-    en: Agile Methodologies
-  kind: functional
-projects: []
-education: []
-certifications:
-- id: cert-1
-  text:
-    en: 'MCSE: Cloud Platform and Infrastructure'
-- id: cert-2
-  text:
-    en: Introduction to Microsoft PowerPlatform
-- id: cert-3
-  text:
-    en: 'MCSD: App Builder'
-languages:
-- id: english
-  text:
-    en: English — Full Professional
-- id: spanish
-  text:
-    en: Spanish — Native
+  linkedin: "https://www.linkedin.com/in/crmdynamics365powerapps"
+  github: "https://github.com/jotakv"
+experience: 
+  -
+    id: "freelance"
+    employer: "Freelance / Independent Consultant"
+    role: 
+      en: "Independent Dynamics 365 CE & Power Platform Consultant"
+    from: "2026-09"
+    to: null
+    bullets: 
+      -
+        id: "freelance-1"
+        text: 
+          en: "Independent consulting practice focused on Dynamics 365 CE and Power Platform solution design and implementation for B2B engagements."
+      -
+        id: "freelance-2"
+        text: 
+          en: "Functional service scope includes stakeholder discovery, requirements gathering, fit-gap analysis, user stories and solution demonstrations."
+      -
+        id: "freelance-3"
+        text: 
+          en: "Technical service scope covers Dataverse, model-driven applications, Power Automate, C#/.NET, JavaScript/TypeScript and Azure integrations."
+      -
+        id: "freelance-4"
+        text: 
+          en: "ALM and delivery scope includes Azure DevOps, Git, CI/CD, troubleshooting, code review and technical guidance."
+      -
+        id: "freelance-5"
+        text: 
+          en: "Bridges business objectives with implementation planning and functional-technical documentation."
+  -
+    id: "bravent"
+    employer: "Bravent"
+    role: 
+      en: "Senior Dynamics 365 CE & Power Platform Consultant"
+    from: "2023-09"
+    to: "2026-09"
+    bullets: 
+      -
+        id: "bravent-1"
+        text: 
+          en: "Worked with Product Owners, Business Analysts, SMEs and end users to capture Dynamics 365 CE and Power Platform requirements."
+      -
+        id: "bravent-2"
+        text: 
+          en: "Led discovery workshops and fit-gap analysis, translating business needs into functional requirements, user stories and delivery tasks."
+      -
+        id: "bravent-3"
+        text: 
+          en: "Designed solutions across Dynamics 365 Sales, Customer Service and Marketing using Dataverse, model-driven apps, Canvas Apps and Power Automate."
+      -
+        id: "bravent-4"
+        text: 
+          en: "Bridged business stakeholders and development teams to assess technical feasibility and define solution designs."
+      -
+        id: "bravent-5"
+        text: 
+          en: "Prepared solution demonstrations, technical walkthroughs, release documentation and production handover materials."
+      -
+        id: "bravent-6"
+        text: 
+          en: "Coordinated development tasks and mentored junior consultants through technical guidance, peer reviews and pair programming."
+      -
+        id: "bravent-7"
+        text: 
+          en: "Designed integrations with SharePoint Online, SQL Server and external systems using Dataverse Web API, REST APIs, Azure Functions and Logic Apps."
+      -
+        id: "bravent-8"
+        text: 
+          en: "Developed and supported Dynamics 365 CE extensions using C#/.NET, JavaScript, TypeScript and Power Automate."
+      -
+        id: "bravent-9"
+        text: 
+          en: "Supported Dataverse security, solution management, ALM and CI/CD with Azure DevOps, Git and managed/unmanaged solutions."
+      -
+        id: "bravent-10"
+        text: 
+          en: "Provided production support, troubleshooting and post-go-live stabilisation for Dynamics 365 CE and connected systems."
+      -
+        id: "bravent-11"
+        text: 
+          en: "Supported solution design and estimation, selecting standard platform functionality or custom development according to requirements."
+      -
+        id: "bravent-12"
+        text: 
+          en: "Contributed to security documentation, environment governance and repeatable delivery practices."
+  -
+    id: "alten"
+    employer: "ALTEN"
+    role: 
+      en: "Dynamics 365 CE & Power Platform Developer / Technical Consultant"
+    from: "2020-01"
+    to: "2023-07"
+    bullets: 
+      -
+        id: "alten-1"
+        text: 
+          en: "Worked on migration from Microsoft Dynamics CRM 2013 to Dynamics 365 CE, including customisation and data integration."
+      -
+        id: "alten-2"
+        text: 
+          en: "Developed C# plug-ins and custom workflow assemblies to implement CRM business logic and process automation."
+      -
+        id: "alten-3"
+        text: 
+          en: "Implemented client-side functionality with JavaScript, jQuery, HTML5 and custom Power Platform components."
+      -
+        id: "alten-4"
+        text: 
+          en: "Worked with C#/.NET services and Power Automate to extend Dynamics 365 business processes."
+      -
+        id: "alten-5"
+        text: 
+          en: "Contributed to SQL Server and SSIS/KingswaySoft ETL activities for data cleansing and migration."
+      -
+        id: "alten-6"
+        text: 
+          en: "Used FetchXML, SQL and OData queries for CRM data access, migration and reporting."
+      -
+        id: "alten-7"
+        text: 
+          en: "Supported source control, CI/CD and deployment with Git and Azure DevOps."
+      -
+        id: "alten-8"
+        text: 
+          en: "Worked with Dynamics 365 Customer Voice, PCF controls and model-driven application improvements."
+  -
+    id: "everis"
+    employer: "everis"
+    role: 
+      en: "Dynamics 365 CRM .NET Developer / Technical Consultant"
+    from: "2019-01"
+    to: "2020-01"
+    bullets: 
+      -
+        id: "everis-1"
+        text: 
+          en: "Developed Dynamics 365 CE back-end services and extensions using the .NET Framework and C#."
+      -
+        id: "everis-2"
+        text: 
+          en: "Built responsive interfaces using JavaScript, jQuery, HTML5 and Bootstrap."
+      -
+        id: "everis-3"
+        text: 
+          en: "Implemented background processing with Azure WebJobs and Azure Functions."
+      -
+        id: "everis-4"
+        text: 
+          en: "Supported version control, release management and deployment using Git, TFS and Azure DevOps."
+      -
+        id: "everis-5"
+        text: 
+          en: "Handled incidents and operational follow-up using Jira, Trello and ServiceNow."
+  -
+    id: "ciemat"
+    employer: "CIEMAT"
+    role: 
+      en: "Web Developer"
+    from: "2015-07"
+    to: "2016-07"
+    bullets: 
+      -
+        id: "ciemat-1"
+        text: 
+          en: "Developed and maintained web portals using Liferay CMS, JSP and Velocity templates."
+      -
+        id: "ciemat-2"
+        text: 
+          en: "Administered Moodle learning-management content, courses and reporting workflows."
+      -
+        id: "ciemat-3"
+        text: 
+          en: "Built responsive interfaces using HTML5, CSS3, JavaScript, Bootstrap and jQuery."
+skills: 
+  -
+    id: "d365"
+    text: 
+      en: "Dynamics 365 CE"
+    kind: "technical"
+  -
+    id: "sales"
+    text: 
+      en: "Dynamics 365 Sales"
+    kind: "technical"
+  -
+    id: "customer-service"
+    text: 
+      en: "Dynamics 365 Customer Service"
+    kind: "technical"
+  -
+    id: "customer-insights"
+    text: 
+      en: "Dynamics 365 Customer Insights / Marketing"
+    kind: "technical"
+  -
+    id: "power-platform"
+    text: 
+      en: "Microsoft Power Platform"
+    kind: "technical"
+  -
+    id: "power-apps"
+    text: 
+      en: "Power Apps"
+    kind: "technical"
+  -
+    id: "model-driven-apps"
+    text: 
+      en: "Model-Driven Apps"
+    kind: "technical"
+  -
+    id: "canvas-apps"
+    text: 
+      en: "Canvas Apps"
+    kind: "technical"
+  -
+    id: "power-automate"
+    text: 
+      en: "Power Automate"
+    kind: "technical"
+  -
+    id: "dataverse"
+    text: 
+      en: "Microsoft Dataverse"
+    kind: "technical"
+  -
+    id: "dataverse-security"
+    text: 
+      en: "Dataverse data modelling & security roles"
+    kind: "technical"
+  -
+    id: "dataverse-web-api"
+    text: 
+      en: "Dataverse Web API"
+    kind: "technical"
+  -
+    id: "pcf-controls"
+    text: 
+      en: "Power Apps Component Framework (PCF)"
+    kind: "technical"
+  -
+    id: "customer-voice"
+    text: 
+      en: "Dynamics 365 Customer Voice"
+    kind: "technical"
+  -
+    id: "csharp"
+    text: 
+      en: "C#"
+    kind: "technical"
+  -
+    id: "dotnet"
+    text: 
+      en: ".NET / .NET Framework"
+    kind: "technical"
+  -
+    id: "plugins"
+    text: 
+      en: "Dynamics 365 C# plug-ins"
+    kind: "technical"
+  -
+    id: "custom-workflows"
+    text: 
+      en: "Custom workflow assemblies"
+    kind: "technical"
+  -
+    id: "typescript"
+    text: 
+      en: "TypeScript"
+    kind: "technical"
+  -
+    id: "javascript"
+    text: 
+      en: "JavaScript"
+    kind: "technical"
+  -
+    id: "azure"
+    text: 
+      en: "Microsoft Azure"
+    kind: "technical"
+  -
+    id: "azure-functions"
+    text: 
+      en: "Azure Functions & WebJobs"
+    kind: "technical"
+  -
+    id: "logic-apps"
+    text: 
+      en: "Azure Logic Apps"
+    kind: "technical"
+  -
+    id: "rest-soap"
+    text: 
+      en: "REST / SOAP integrations"
+    kind: "technical"
+  -
+    id: "odata"
+    text: 
+      en: "OData"
+    kind: "technical"
+  -
+    id: "fetchxml"
+    text: 
+      en: "FetchXML"
+    kind: "technical"
+  -
+    id: "sql"
+    text: 
+      en: "Microsoft SQL Server"
+    kind: "technical"
+  -
+    id: "ssis"
+    text: 
+      en: "SSIS / KingswaySoft"
+    kind: "technical"
+  -
+    id: "sharepoint"
+    text: 
+      en: "SharePoint Online integration"
+    kind: "technical"
+  -
+    id: "azure-devops"
+    text: 
+      en: "Azure DevOps"
+    kind: "technical"
+  -
+    id: "git"
+    text: 
+      en: "Git"
+    kind: "technical"
+  -
+    id: "ci-cd"
+    text: 
+      en: "CI/CD pipelines"
+    kind: "technical"
+  -
+    id: "alm"
+    text: 
+      en: "Power Platform ALM"
+    kind: "technical"
+  -
+    id: "managed-solutions"
+    text: 
+      en: "Managed / unmanaged solutions"
+    kind: "technical"
+  -
+    id: "xrmtoolbox"
+    text: 
+      en: "XrmToolBox"
+    kind: "technical"
+  -
+    id: "ribbon-workbench"
+    text: 
+      en: "Ribbon Workbench"
+    kind: "technical"
+  -
+    id: "html-css"
+    text: 
+      en: "HTML5 / CSS3"
+    kind: "technical"
+  -
+    id: "liferay"
+    text: 
+      en: "Liferay CMS"
+    kind: "technical"
+  -
+    id: "moodle"
+    text: 
+      en: "Moodle LMS"
+    kind: "technical"
+  -
+    id: "agile"
+    text: 
+      en: "Agile / Scrum delivery"
+    kind: "functional"
+  -
+    id: "requirements"
+    text: 
+      en: "Requirements gathering"
+    kind: "functional"
+  -
+    id: "discovery"
+    text: 
+      en: "Discovery workshops"
+    kind: "functional"
+  -
+    id: "fit-gap"
+    text: 
+      en: "Fit-gap analysis"
+    kind: "functional"
+  -
+    id: "stakeholders"
+    text: 
+      en: "Stakeholder management"
+    kind: "functional"
+  -
+    id: "solution-design"
+    text: 
+      en: "Solution design"
+    kind: "functional"
+  -
+    id: "functional-specs"
+    text: 
+      en: "Functional specifications"
+    kind: "functional"
+  -
+    id: "user-stories"
+    text: 
+      en: "User stories & acceptance criteria"
+    kind: "functional"
+  -
+    id: "business-process"
+    text: 
+      en: "Business process analysis"
+    kind: "functional"
+  -
+    id: "demonstrations"
+    text: 
+      en: "Solution demonstrations"
+    kind: "functional"
+  -
+    id: "mentoring"
+    text: 
+      en: "Technical mentoring & code reviews"
+    kind: "functional"
+  -
+    id: "technical-docs"
+    text: 
+      en: "Technical documentation & handover"
+    kind: "functional"
+  -
+    id: "governance"
+    text: 
+      en: "Environment governance"
+    kind: "functional"
+  -
+    id: "production-support"
+    text: 
+      en: "Production support & troubleshooting"
+    kind: "functional"
+  -
+    id: "training"
+    text: 
+      en: "User training and enablement"
+    kind: "functional"
+projects: {}
+education: 
+  -
+    id: "dorset"
+    text: 
+      en: "Bachelor of Science in Computing — Dorset College, Dublin (2023–2026)."
+  -
+    id: "ucm"
+    text: 
+      en: "Computer Science studies — Complutense University of Madrid, UCM (2016–2018; completion not confirmed by source)."
+  -
+    id: "clara-del-rey"
+    text: 
+      en: "Higher Technician in Multiplatform Applications Development — IES Clara del Rey, Madrid (2014–2016)."
+certifications: 
+  -
+    id: "cert-1"
+    text: 
+      en: "MCSE: Cloud Platform and Infrastructure (qualification named in the existing portfolio)."
+  -
+    id: "cert-2"
+    text: 
+      en: "Introduction to Microsoft PowerPlatform (training named in the existing portfolio)."
+  -
+    id: "cert-3"
+    text: 
+      en: "MCSD: App Builder (qualification named in the existing portfolio)."
+  -
+    id: "scrum-manager"
+    text: 
+      en: "Scrum Master — Scrum Manager (training/certification listed in source CV, 2020)."
+languages: 
+  -
+    id: "english"
+    text: 
+      en: "English — Full Professional (portfolio statement; external C1/IELTS credential not verified)."
+  -
+    id: "spanish"
+    text: 
+      en: "Spanish — Native"
